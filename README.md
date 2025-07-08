@@ -11,7 +11,7 @@ This API provides endpoints to:
 
 ---
 
-##  1. Get Feedback Questions
+##  1. Feedback questions
 
 **Endpoint**:  
 `GET /api/school/feedback_questions/<fid>/`  
