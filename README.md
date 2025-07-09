@@ -11,7 +11,7 @@ This API provides endpoints to:
 
 ---
 
-##  1. Feedback questions
+**##  1. Feedback questions**
 
 **Endpoint**:  
 `GET /api/school/feedback_questions/<fid>/`  
@@ -19,7 +19,7 @@ Replace `<fid>` with either `parent` or `teacher`.
 
 ---
 
-###  Examples
+**###  Examples**
 
 ```bash
 # Get feedback questions for parents
