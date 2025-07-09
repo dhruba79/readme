@@ -53,5 +53,80 @@ curl -X GET "http://localhost:8000/api/school/feedback_questions/teacher/"
 ]
 ```
 
+
+
+## 2. Submit Feedback
+
+**Endpoint**
+`POST /api/school/submit_feedback/`
+
 ---
+
+###  Description
+
+Submit feedback responses for a student based on predefined questions.
+
+---
+
+###  Request Body
+```json
+[
+{
+  "user_id": "student123",
+  "fid": "parent",
+  "responses": [
+    {
+      "qid": "q1",
+      "answer": [
+        "mimicry_impersonation",
+        "storytelling_expressiveness"
+      ]
+    },
+    {
+      "qid": "q6",
+      "answer": "Yes"
+    }
+  ]
+}
+]
+```
+
+---
+
+###  Example Usage
+
+```bash
+curl -X POST "http://localhost:8000/api/school/submit_feedback/" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "user_id": "student123",
+    "fid": "parent",
+    "responses": [
+      {
+        "qid": "q1",
+        "answer": [
+          "mimicry_impersonation",
+          "storytelling_expressiveness"
+        ]
+      },
+      {
+        "qid": "q6",
+        "answer": "Yes"
+      }
+    ]
+  }'
+```
+
+---
+
+###  Sample Success Response
+
+```json
+{
+  "message": "Feedback submitted successfully"
+}
+```
+
+---
+
 
