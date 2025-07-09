@@ -3,33 +3,6 @@
 
 
 ````markdown
-###  Feedback API Documentation:
-
-This API provides endpoints to:
-- Get feedback questions for parents and teachers.
-- Submit feedback responses for students.
-
----
-**
-###  1. Feedback questions:
-
-**Endpoint**:  
-`GET /api/school/feedback_questions/<fid>/`  
-Replace `<fid>` with either `parent` or `teacher`.
-
----
-
-###  Examples
-
-```bash
-# Get feedback questions for parents
-curl -X GET "http://localhost:8000/api/school/feedback_questions/parent/"
-
-# Get feedback questions for teachers
-curl -X GET "http://localhost:8000/api/school/feedback_questions/teacher/"
-````
-
----
 
 ###  Sample Response:
 
