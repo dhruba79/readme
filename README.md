@@ -1,10 +1,11 @@
 
 ---
 
-##  Get Feedback Questions
+##  1. Get Feedback Questions
 
 **Endpoint**
 `GET /api/school/feedback_questions/<fid>/`
+> Replace `<fid>` with either `parent` or `teacher`
 
 ---
 
@@ -13,12 +14,6 @@
 Fetch a list of feedback questions based on the role of the person providing the feedback.
 
 ---
-
-###  Path Parameters
-
-| Parameter | Type   | Required | Description                                       |
-| --------- | ------ | -------- | ------------------------------------------------- |
-| `fid`     | string | ✅ Yes    | Feedback provider role: `"parent"` or `"teacher"` |
 
 ---
 
