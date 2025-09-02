@@ -63,7 +63,7 @@ curl -X POST "http://localhost:8000/api/school/students/registration/" \
 
 
 ```
-##   If email already exists:
+####   If email already exists:
 
 ```json
 {
