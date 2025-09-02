@@ -67,10 +67,11 @@ curl -X POST "http://localhost:8000/api/school/students/registration/" \
 
 ```json
 {
-  {
-  "email_id": "This email is already registered. Please use a different email address."
-}
-
+    "errors": {
+        "email_id": [
+            "This email is already registered. Please use a different email address."
+        ]
+    }
 }
 
 
