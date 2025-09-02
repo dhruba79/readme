@@ -58,7 +58,11 @@ curl -X POST "http://localhost:8000/api/school/students/registration/" \
 
 ```json
 {
-  "confirm_password": "Passwords do not match."
+    "errors": {
+        "confirm_password": [
+            "Passwords do not match."
+        ]
+    }
 }
 
 
