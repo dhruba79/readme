@@ -8,6 +8,7 @@
 ###  Description
 
 Register a new student with name, email, and password. Each email can be registered only once. Passwords are securely hashed before storing in the database.
+
 ---
 
 ###  Request Body
@@ -53,7 +54,7 @@ curl -X POST "http://localhost:8000/api/school/students/registration/" \
 
 ```
 ###  Sample Error Responses
-##   If passwords don't match:
+####  If passwords don't match:
 
 ```json
 {
